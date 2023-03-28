@@ -1,3 +1,26 @@
+//array distructure
+
+let brandCars = ["Audi", "Bentley", "BMW", "Cadillac", "Acura"];
+
+// let [zero] = brandCars; // arrays will distructured by id
+
+// console.log(zero); // brandCars[0] == "Audi"
+
+
+// let [zero, one, ...other] = brandCars; // ...other will output all data but not distructred, other can be named any
+
+// console.log(other); // ['BMW', 'Cadillac', 'Acura' ]
+
+function getData([uno]){
+    console.log(uno);
+}
+
+getData(brandCars) // output Audi bc first id = 0 = Audi
+
+
+
+
+
 //array.reduce(()=>{},0) ===============================================================================
 
 // const items = [
@@ -58,15 +81,15 @@
 // console.log(sum);
 
 
-const luxuryCars = [
-    { id: 1, year: 2022, type: "Sedan", name: "Maybach" },
-    { id: 2, year: 2023, type: "Coupe", name: "Porsche" },
-    { id: 3, year: 2019, type: "Five door", name: "Maserati" },
-    { id: 4, year: 2021, type: "SUV", name: "Bentley" },
-    { id: 5, year: 2019, type: "SUV", name: "Cadillac" },
-    { id: 6, year: 2011, type: "Sedan", name: "Rolls-Royce" },
-    { id: 7, year: 2009, type: "Coupe", name: "Lexus" },
-]
+// const luxuryCars = [
+//     { id: 1, year: 2022, type: "Sedan", name: "Maybach" },
+//     { id: 2, year: 2023, type: "Coupe", name: "Porsche" },
+//     { id: 3, year: 2019, type: "Five door", name: "Maserati" },
+//     { id: 4, year: 2021, type: "SUV", name: "Bentley" },
+//     { id: 5, year: 2019, type: "SUV", name: "Cadillac" },
+//     { id: 6, year: 2011, type: "Sedan", name: "Rolls-Royce" },
+//     { id: 7, year: 2009, type: "Coupe", name: "Lexus" },
+// ]
 
 
 
@@ -75,7 +98,7 @@ const luxuryCars = [
 //     return 1;
 // }, luxuryCars)
 
-console.log(result);
+// console.log(result);
 
 
 //===============================================================================================================
